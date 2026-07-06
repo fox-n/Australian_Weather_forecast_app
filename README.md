@@ -7,7 +7,7 @@
 сьогоднішніх погодних показників для обраної локації в Австралії
 (датасет [Rain in Australia](https://www.kaggle.com/datasets/jsphyg/weather-dataset-rattle-package)).
 
-🔗 **Задеплоєний застосунок:** _додати посилання після деплою на Streamlit Cloud_
+🔗 **Задеплоєний застосунок:** https://australianweatherforecastapp.streamlit.app
 
 > Зверни увагу: застосунки на безкоштовному Streamlit Cloud "засинають"
 > після періоду неактивності — перший запуск після паузи може зайняти
@@ -16,7 +16,6 @@
 ## Структура проєкту
 
 ```
-├── data/               # дані, використані для навчання моделі
 ├── images/             # зображення для застосунку
 ├── models/             # навчена ML-модель (pipeline: imputer, scaler, encoder, model)
 ├── app.py              # основний файл Streamlit-застосунку
@@ -37,8 +36,8 @@ Rain in Australia. Разом з моделлю збережено весь па
 
 1. Клонувати репозиторій:
    ```bash
-   git clone https://github.com/<твій-юзернейм>/<назва-репо>.git
-   cd <назва-репо>
+   git clone https://github.com/fox-n/Australian_Weather_forecast_app.git
+   cd Australian_Weather_forecast_app
    ```
 
 2. Створити та активувати віртуальне середовище:
@@ -59,7 +58,7 @@ Rain in Australia. Разом з моделлю збережено весь па
 
 ## Технології
 
-- Python 3.13
+- Python 3.12
 - scikit-learn 1.5.2
 - Streamlit
 - pandas / numpy
