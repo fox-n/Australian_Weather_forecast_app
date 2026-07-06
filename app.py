@@ -41,7 +41,6 @@ WIND_DIRS = ['E', 'ENE', 'ESE', 'N', 'NE', 'NNE', 'NNW', 'NW', 'S', 'SE', 'SSE',
 # Інтерфейс
 # ---------------------------------------------------------
 st.title("🌦️ Rain in Australia — прогноз дощу на завтра")
-st.image('images/KWfcpcO.png')
 st.write("Заповни параметри погоди на сьогодні, щоб отримати прогноз, чи піде дощ завтра.")
 
 with st.sidebar:
@@ -68,8 +67,8 @@ with st.sidebar:
     pressure_9am = st.number_input("Pressure9am (hPa)", value=1015.0, step=0.5)
     pressure_3pm = st.number_input("Pressure3pm (hPa)", value=1013.0, step=0.5)
 
-    cloud_9am = st.slider("Cloud9am (окти)", 0, 9, 4)
-    cloud_3pm = st.slider("Cloud3pm (окти)", 0, 9, 4)
+    cloud_9am = st.slider("Cloud9am (хмарність, 0-9 часток неба)", 0, 9, 4)
+    cloud_3pm = st.slider("Cloud3pm (хмарність, 0-9 часток неба)", 0, 9, 4)
 
     temp_9am = st.number_input("Temp9am (°C)", value=18.0, step=0.5)
     temp_3pm = st.number_input("Temp3pm (°C)", value=23.0, step=0.5)
